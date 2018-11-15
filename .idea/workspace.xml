@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="" />
+    <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AutomationTestingFramework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AutomationTestingFramework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +15,37 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="men's.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/men's.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="womens.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/womens.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/home.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="context_menu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/context_menu.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="sing_in.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -22,11 +57,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/page_object/men's.py" />
+        <option value="$PROJECT_DIR$/page_object/home.py" />
+        <option value="$PROJECT_DIR$/page_object/context_menu.py" />
+        <option value="$PROJECT_DIR$/page_object/account_info.py" />
+        <option value="$PROJECT_DIR$/page_object/sing_in.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="772" />
     <option name="y" value="20" />
     <option name="width" value="584" />
     <option name="height" value="688" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -37,12 +86,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="AutomationTestingFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestingFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="AutomationTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AutomationTestingFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutomationTestingFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="AutomationTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
               <item name="page_object" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -54,7 +103,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -82,16 +131,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="772" y="20" width="584" height="688" extended-state="1" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.514652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20907739" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32843137" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37589929" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.34150326" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -107,15 +157,36 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1326" />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/men's.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/womens.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/home.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/context_menu.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="34" column="16" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
         </state>
       </provider>
     </entry>
