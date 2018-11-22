@@ -2,6 +2,7 @@ import time
 import logging
 
 try:
+    from selenium import webdriver
     from selenium.common.exceptions import WebDriverException
 except ImportError:
     logging.critical("Selenium module is not installed...Exiting program.")
@@ -11,8 +12,7 @@ except ImportError:
 class Navigation:
     driver = None
 
-    def __init__(self,driver):
-        self.driver = driver
+    driver = webdriver.Chrome()
 
     def back(self):
         try:
