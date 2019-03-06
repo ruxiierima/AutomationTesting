@@ -1,5 +1,7 @@
 import logging
 
+from utilis.base import Base
+
 try:
     from selenium.common.exceptions import WebDriverException
     from selenium.common.exceptions import NoSuchElementException
@@ -14,8 +16,7 @@ except ImportError:
     exit(1)
 
 ## Element- commun function for page elements
-class Element:
-    driver = None
+class Element():
     selectedElement = None
     elements = None
 

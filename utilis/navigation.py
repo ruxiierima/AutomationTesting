@@ -1,6 +1,8 @@
 import time
 import logging
 
+from utilis.base import Base
+
 try:
     from selenium import webdriver
     from selenium.common.exceptions import WebDriverException
@@ -9,14 +11,11 @@ except ImportError:
     exit(1)
 
 ## Navigation class - commun function for browser navigation
-class Navigation:
-    driver = None
+class Navigation(Base):
 
-    driver = webdriver.Chrome()
-
-    def back(self):
+    def back(self,driver):
         try:
-            self.driver.back()
+            driver.back()
         except WebDriverException:
             logging.error("WebDriverException: Couldn't return to previous page")
 

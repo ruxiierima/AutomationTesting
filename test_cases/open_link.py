@@ -1,6 +1,17 @@
-from utilis import browser
+import unittest
+
+from page_object.home import Home
+from utilis import values
+from utilis.base import Base
+from utilis.driver import Driver
+
+"""Open the site and clicks on SING IN"""
 
 
-browser_obj=browser.Browser()
-browser_obj.open_webpage()
-browser_obj.delete_cookies()
+driver=Driver().setUp()
+
+browser = Base(driver)
+home = Home(driver)
+
+browser.navigate_to_url(values.BASEURL)
+home.click_sing_in_button()
