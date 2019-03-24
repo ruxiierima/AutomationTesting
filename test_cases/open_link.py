@@ -14,4 +14,5 @@ browser = Base(driver)
 home = Home(driver)
 
 browser.navigate_to_url(values.BASEURL)
-home.click_sing_in_button()
+sing_in=home.click_sing_in_button()
+sing_in.write_email("abc@gmail.com")

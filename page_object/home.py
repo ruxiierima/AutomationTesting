@@ -1,22 +1,24 @@
+from page_object.sing_in import SingIn
 from utilis.base import Base
 from utilis.element import Element
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 
 class Home(Base):
 
     #Class locators
+    _home_page_locator="gr__automationpractice_com"
     _coockies_locator="//div[@class='cookies-info-text']"
-    _accept_button_coockies_locator="fa fa-search"
-    _sing_in_button_locator="(//a[@href='/account/login'][contains(.,'Sign In / Create Account')])[3]"
+    _sing_in_button_locator="login"
 
+    ## Constructor who waits for page to pe loaded
 
-    def click_accept_button(self):
-        self.driver.implicitly_wait(30)
-        accept_button = self.driver.find_element_by_class_name(self._accept_button_coockies_locator)
-        #accept_button=self.driver.switch_to.frame(self.driver.find_element_by_xpath(self._accept_button_coockies_locator))
-        accept_button.click()
+        #WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, self._home_page_locator)))
+
 
     def click_sing_in_button(self):
-        self.driver.implicitly_wait(30)
-        sing_in_button= self.driver.find_element_by_xpath(self._sing_in_button_locator)
+        sing_in_button= self.driver.find_element_by_class_name(self._sing_in_button_locator)
         sing_in_button.click()
+        return SingIn(self.driver)

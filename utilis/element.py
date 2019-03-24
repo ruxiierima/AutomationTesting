@@ -19,6 +19,20 @@ except ImportError:
 class Element():
     selectedElement = None
     elements = None
+    def __init__(self,driver):
+        self.driver=driver
+
+    def click_on_element(self,element_locator,option):
+        element = self.driver.find_element_by(element_locator,option)
+        element.click()
+
+    def find_element_by(self,locator,option):
+        if option=='id':
+            return self.driver.find_element_by_id(locator)
+        if option=='class':
+            return self.driver.find_element_by_class_name(locator)
+        else:
+            raise Exception("Not a valid option!")
 
     ##### Locating Element #####
 
