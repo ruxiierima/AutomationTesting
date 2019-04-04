@@ -9,18 +9,27 @@ class SingIn(Base):
     # Class variables and locators
     _sing_in_page_locator = "gr__automationpractice_com"
     _email_address_locator = 'email'
+    _password_locator="passwd"
 
     #Constructor
     #def __init__(self):
        # WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, self._sing_in_page_locator)))
 
-    #Clicks on 'Email Address' field
-    def click_email_address(self):
-        Element(self.driver).click_on_element(self._email_address_locator,'id')
+    #Types email on 'Email Address' field
+    def enter_email(self, email):
+        element=self.driver.find_element_by_id(self._email_address_locator)
+        if self.is_element_visible(element):
+            self.type_into_a_field(element,email)
+        else:
+            raise TypeError("Element'%s' can not be found"%self._email_address_locator)
 
-    def write_email(self,email):
-        element=Element(self.driver).find_element_by(self._email_address_locator,'id')
-        element.send_keys(email)
+    # Types password on 'Password' field
+    def enter_password(self, password):
+        element = self.driver.find_element_by_id(self._password_locator)
+        if self.is_element_visible(element):
+            self.type_into_a_field(element, password)
+        else:
+            raise TypeError("Element'%s' can not be found" % self._password_locator)
 
     # Clicks on 'Password' field
     def click_password(self):

@@ -1,4 +1,5 @@
 import logging
+import unittest
 
 try:
     from selenium import webdriver
@@ -13,6 +14,7 @@ except ImportError:
 ## Driver class -setup for the driver
 class Driver():
 
+    @classmethod
     def setUp(self):
         chrome_options = Options()
         # chrome_options.add_argument("–no - sandbox")
@@ -21,3 +23,8 @@ class Driver():
         driver = webdriver.Chrome(chrome_options=chrome_options)
         #self.driver.implicitly_wait(30)
         return driver
+
+    # close the browser window
+    @classmethod
+    def tearDown(self):
+        self.driver.quit()
