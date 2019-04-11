@@ -1,6 +1,6 @@
 import logging
 import unittest
-
+from behave import fixture
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
@@ -14,7 +14,7 @@ except ImportError:
 ## Driver class -setup for the driver
 class Driver():
 
-    @classmethod
+
     def setUp(self):
         chrome_options = Options()
         # chrome_options.add_argument("–no - sandbox")
@@ -25,6 +25,5 @@ class Driver():
         return driver
 
     # close the browser window
-    @classmethod
     def tearDown(self):
         self.driver.quit()

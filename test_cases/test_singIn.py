@@ -17,12 +17,11 @@ class TestSingIn(TestCase):
         # driver=Driver().setUp()
 
     def test_sing_in(self):
-        shared.sing_in(self.driver)
+        shared.sing_in(self.driver,"email",'pass')
+        assert 'My' in self.driver.title
 
-    # TearDown function
-    def tearDown(self):
-        self.driver.close()
-        # Driver().tearDown()
+
+    # Driver().tearDown()
 
     if __name__ == "__main__":
         unittest.main()

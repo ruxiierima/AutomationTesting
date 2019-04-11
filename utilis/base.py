@@ -2,7 +2,7 @@ import logging
 from selenium.webdriver.common.action_chains import ActionChains
 
 from utilis.driver import Driver
-
+from behave import given, when, then
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
@@ -19,6 +19,7 @@ class Base(Driver):
     def __init__(self, driver):
         self.driver = driver
 
+    @given(u'I navigate to the url: {url} the website')
     def navigate_to_url(self, url):
         if isinstance(url, str):
             self.driver.get(url)
