@@ -14,10 +14,17 @@ except ImportError:
     exit(1)
 
 ## Base class -helper functionality
-class Base(Driver):
+class Base():
+    instance = None
 
-    def __init__(self, driver):
-        self.driver = driver
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Base()
+        return cls.instance
+
+    def __init__(self):
+        self.driver = Driver().get_driver()
 
     @given(u'I navigate to the url: {url} the website')
     def navigate_to_url(self, url):

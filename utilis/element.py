@@ -1,6 +1,6 @@
 import logging
 
-from utilis.base import Base
+from utilis.driver import web_driver
 
 try:
     from selenium.common.exceptions import WebDriverException
@@ -17,10 +17,19 @@ except ImportError:
 
 ## Element- commun function for page elements
 class Element():
+
     selectedElement = None
     elements = None
-    def __init__(self,driver):
-        self.driver=driver
+    instance = None
+
+    def __init__(self):
+        self.driver = web_driver.get_driver()
+
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Element()
+        return cls.instance
 
     def click_on_element(self,element_locator,option):
         element = self.driver.find_element_by(element_locator,option)
@@ -1038,3 +1047,12 @@ class Element():
             logging.error("Element location is not determined")
             return 0
         return (x,y)
+
+    def is_element_present(self, how, what):
+        try:
+            self.driver.find_element(by=how, value=what)
+        except NoSuchElementException as e:
+            return False
+        return True
+
+element=Element.get_instance()

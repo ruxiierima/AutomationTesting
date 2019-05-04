@@ -1,19 +1,30 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 from utilis.base import Base
-from utilis.element import Element
+from utilis.driver import web_driver
+from utilis.element import element
+
 
 class SingIn(Base):
+
+    instance = None
 
     # Class variables and locators
     _sing_in_page_locator = "gr__automationpractice_com"
     _email_address_locator = 'email'
     _password_locator="passwd"
+    _sing_in_button_locator="//span[contains(.,'Sign in')]"
+    _error_message_locator="alert alert-danger"
 
     #Constructor
-    #def __init__(self):
-       # WebDriverWait(self.driver, 3).until(EC.presence_of_element_located((By.CLASS_NAME, self._sing_in_page_locator)))
+    def __init__(self):
+        self.driver = web_driver.get_driver()
+
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = SingIn()
+        return cls.instance
 
     #Types email on 'Email Address' field
     def enter_email(self, email):
@@ -31,32 +42,21 @@ class SingIn(Base):
         else:
             raise TypeError("Element'%s' can not be found" % self._password_locator)
 
-    # Clicks on 'Password' field
-    def click_password(self):
-        pass
+    # Clicks on 'Sing In' button
+    def click_sing_in_button(self):
+        sing_in_button=self.driver.find_element_by_xpath(self._sing_in_button_locator)
+        sing_in_button.click()
+        return self.SingInAuthentication()
 
-    # Clicks on 'Lost your password?' button
-    def click_lost_your_password_button(self):
-        return self.LostYourPassword()
-
-
-    class LostYourPassword():
+    class SingInAuthentication():
 
         # Class variables and locators
+        _error_message_locator = "alert alert-danger"
 
-        # Clicks on 'Email Address' field
-        def click_email_address(self):
-            pass
+        def is_error_message_present(self):
+            return element.is_element_present(By.CLASS_NAME,self._error_message_locator)
 
-        def click_reset_password_button(self):
-            pass
-
-        def click_cancel_button(self):
-            pass
-
-    class CreateAccount():
-        pass
-
+sing_in=SingIn.get_instance()
 
 
 

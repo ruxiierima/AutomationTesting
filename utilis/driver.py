@@ -1,6 +1,7 @@
 import logging
-import unittest
-from behave import fixture
+
+from utilis import values
+
 try:
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
@@ -13,17 +14,38 @@ except ImportError:
 
 ## Driver class -setup for the driver
 class Driver():
+    instance = None
 
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Driver()
+        return cls.instance
 
-    def setUp(self):
+    def __init__(self):
         chrome_options = Options()
-        # chrome_options.add_argument("–no - sandbox")
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--start-maximized")
-        driver = webdriver.Chrome(chrome_options=chrome_options)
-        #self.driver.implicitly_wait(30)
-        return driver
+        self.driver = webdriver.Chrome(chrome_options=chrome_options)
+
+    def load_website(self):
+        self.driver.get(values.BASEURL)
+
+    """def setUp(self):
+        global driver
+        if driver == None:
+            chrome_options = Options()
+            chrome_options.add_argument("--disable-infobars")
+            chrome_options.add_argument("--start-maximized")
+            driver = webdriver.Chrome(chrome_options=chrome_options)
+
+        return driver"""
+
+    def get_driver(self):
+        return self.driver
 
     # close the browser window
     def tearDown(self):
         self.driver.quit()
+
+web_driver = Driver.get_instance()
