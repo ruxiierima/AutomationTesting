@@ -1,5 +1,5 @@
 from page_object.sing_in import SingIn
-from utilis.driver import web_driver
+from utils.driver import web_driver
 
 
 class Home():

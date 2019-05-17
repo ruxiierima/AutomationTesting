@@ -1,0 +1,57 @@
+from behave import *
+from behave import step
+from nose.tools import assert_true ,assert_equal
+from page_object.sing_in import sing_in
+from page_object.log_in import log_in
+from page_object.home import home
+from utils.driver import web_driver
+from utils.data_handler import DataHandler
+
+
+@given("I load the website")
+def step(context):
+    web_driver.load_website()
+
+@given("I go to Sing In page")
+def step_impl(context):
+    home.click_sing_in_button()
+
+@when("I sing in with email:{email} and pass:{password}")
+def step_impl(context,email,password):
+    sing_in.enter_email(email)
+    sing_in.enter_password(password)
+
+
+@when("I press the Sing In button")
+def step_impl(context):
+    sing_in.click_sing_in_button()
+
+@then("Verify if the expected error message:{expected_message} is displayed in Sing In field")
+def step_impl(context,expected_message):
+    assert_equal(expected_message, sing_in.get_errot_message, "The error message is displayed")
+
+
+@when("Create a new account with email: {email}")
+def step_impl(context,email):
+    sing_in.enter_email_to_create_account(email)
+    sing_in.click_create_an_account_button()
+
+@then("I verify if text: {expected_text} is present in Create Account field")
+def step_impl(context,expected_text):
+    assert_equal(expected_text, sing_in.get_create_account_message, "The desired message is displayed")
+
+
+@when("Create new account")
+def step_impl(context):
+    log_in.select_gender(DataHandler().test_data('title'))
+    log_in.enter_first_name(DataHandler().test_data('first_name'))
+    log_in.enter_last_name(DataHandler().test_data('last_name'))
+    log_in.enter_address(DataHandler().test_data('address_1'))
+    log_in.enter_post_code(DataHandler().test_data('postal_code'))
+    log_in.enter_additional_info(DataHandler().test_data('information'))
+    log_in.enter_mobile_phone(DataHandler().test_data('mobile_phone'))
+    log_in.enter_alias_address(DataHandler().test_data('alias_address'))
+    log_in.enter_city(DataHandler().test_data('city'))
+    log_in.choose_state(DataHandler().test_data('state'))
+    log_in.choose_country(DataHandler().test_data('country'))
+    log_in.enter_dob(DataHandler().test_data('date_of_birth'))
