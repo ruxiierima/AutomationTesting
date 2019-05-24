@@ -16,7 +16,10 @@ class LogIn(Base):
     _log_in_page_locator_class='account-creation_form'
     _gender_list_xpath='radio-inline'
     _first_name_text_box_id='customer_firstname'
-    _last_name_text_box_id='lastname'
+    _first_name_address_text_box_id='firstname'
+    _last_name_text_box_id='customer_lastname'
+    _last_name_address_text_box_id = 'lastname'
+    _password_text_box_id='passwd'
     _address_text_box_id='address1'
     _post_code_text_box_id='postcode'
     _additional_info_text_box_id='other'
@@ -26,6 +29,7 @@ class LogIn(Base):
     _state_text_box_id='id_state'
     _country_text_box_id='id_country'
     _dob_data_box_class='col-xs-4'
+    _register_button_xpath="//span[contains(.,'Register')]"
 
     # Constructor
     def __init__(self):
@@ -54,8 +58,17 @@ class LogIn(Base):
     def enter_first_name(self,first_name):
         self.type_into_a_field(By.ID ,self._first_name_text_box_id,first_name)
 
+    def enter_first_name_address(self,first_name_address):
+        self.type_into_a_field(By.ID, self._first_name_address_text_box_id, first_name_address)
+
     def enter_last_name(self,last_name):
-        self.type_into_a_field(By.ID ,self. _last_name_text_box_id,last_name)
+        self.type_into_a_field(By.ID, self._last_name_text_box_id,last_name)
+
+    def enter_last_name_address(self, last_name_address):
+        self.type_into_a_field(By.ID, self._last_name_address_text_box_id, last_name_address)
+
+    def enter_password(self,passw):
+        self.type_into_a_field(By.ID,self._password_text_box_id,passw)
 
     def enter_address(self,address):
         self.type_into_a_field(By.ID, self._address_text_box_id, address)
@@ -82,7 +95,9 @@ class LogIn(Base):
         self.select_value_from_dropdown_list(By.ID, self._country_text_box_id, country)
 
     def enter_dob(self,dob):
-        self.type_into_date_box(By.CLASS_NAME,self._dob_data_box_class,dob)
+        self.type_into_date_picker(By.CLASS_NAME,self._dob_data_box_class,dob)
 
+    def click_register(self):
+        self.driver.find_element(By.XPATH,self._register_button_xpath).click()
 
 log_in=LogIn.get_instance()

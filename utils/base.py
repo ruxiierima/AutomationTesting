@@ -1,5 +1,6 @@
 import logging
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
 from utils.driver import Driver
@@ -62,9 +63,23 @@ class Base():
         select.select_by_visible_text(value)
 
     #value format needs to be like this: 'dd/mm/yyy'
-    def type_into_date_box(self,how,where,value):
-        element_field = self.driver.find_elements(by=how, value=where)
-        self.driver.execute_script("arguments[0].value = arguments[1]", element_field, '01/01/2011')
+    def type_into_date_picker(self,how,where,value):
+        data_list=str(value).split('/')
+        dictionary_data={'days':None ,
+                         'months':None ,
+                         'years':None
+                         }
+
+        for index, key in enumerate(dictionary_data):
+                dictionary_data[key]=(data_list[index])
+
+        data_elements= self.driver.find_elements(by=how, value=where)
+
+        for index,item in enumerate(data_elements):
+            element=item.find_element(By.ID,str(list(dictionary_data.keys())[index]))
+            Select(element).select_by_value(data_list[index])
+
+
 
 
 

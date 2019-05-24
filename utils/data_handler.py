@@ -1,5 +1,5 @@
-import os
-
+import random
+import string
 import pandas as pd
 
 class DataHandler():
@@ -13,6 +13,20 @@ class DataHandler():
         # read the data
         csv_read = pd.read_csv(r_filenameCSV,header=0)
         return csv_read[name][0]
+
+
+    domains = ["hotmail.com", "gmail.com", "aol.com", "mail.com", "mail.kz", "yahoo.com"]
+    letters = string.ascii_lowercase[:12]
+
+    def get_one_random_domain(self,domains):
+        return random.choice(domains)
+
+    def get_one_random_name(selff,letters):
+        return ''.join(random.choice(letters) for i in range(7))
+
+    def generate_random_emails(self):
+        return [self.get_one_random_name(self.letters) + '@' + self.get_one_random_domain(self.domains) for i in range(1)][0]
+
 """
 class DataHandler():
 
