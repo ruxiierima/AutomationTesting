@@ -3,6 +3,13 @@
 @setup
 Feature: Shopping products
 
-  Scenario: Submit an order
+   Background: I go to home page
     Given I load the website
-    Given I add products to the cart
+
+  Scenario: Submit an order
+    Given I add 7 products to the cart
+    Then I check if the expected quantity: '7' added to the cart is correct
+    When I click on check out button
+    Then I check if all product details from cart summary are the same with products from the cart
+
+

@@ -2,35 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/features/test_create_account.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/create_account.feature" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/features/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/sing_in_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/sing_in_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/test_sing_in.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_sing_in.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/shopping_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/shopping_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/test_shopping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_shopping.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_object/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_object/log_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/log_in.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page_object/sing_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/sing_in.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/0010dbca-d736-4ad6-a61a-a9277e4cc2bb-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/023003e0-f243-4e39-b447-72b8c423c035-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/2545617c-c98b-438a-b6b8-8384358fead4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/47e80f6e-1a9d-4dca-a8d3-29b9e936677b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/48791d55-8394-47f2-a255-ba9323c48f70-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/7be31809-fd17-4b0b-8e4a-a3e0a1beb961-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/7f706460-67a8-446d-b5f7-a9a113a6ada4-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/8555c497-8f28-45ef-904e-825a0db26f52-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/9b00d9f0-d9d4-4a3d-a119-0c4c3d860d8f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/a8898aff-0602-495e-a2ea-33d444898d1b-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/b0f94bcf-0bc4-43d4-81ab-d72e2c2125cc-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/d7ca1bb2-d7eb-46c8-97c5-51ce2cdf1497-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/f6ff97a4-3cd3-4de2-880a-3bbd13b974b3-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/ffdd4d8b-99a7-4f33-af38-43af0730ae5f-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data/create_new_account_test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data/create_new_account_test_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data_handler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/driver.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/driver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/virtualenv/chromedriver.exe" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,43 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/driver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/test_shopping.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="204">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -88,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/steps/shopping_steps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            <state relative-caret-position="223">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -98,10 +42,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page_object/home.py">
+        <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/matchers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+            <state relative-caret-position="17">
+              <caret line="97" selection-start-line="97" selection-end-line="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/checkout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -110,10 +63,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/environment.py">
+        <entry file="file://$PROJECT_DIR$/page_object/home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="273">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +80,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
-        <option value="Python Script" />
         <option value="Gherkin feature file" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -134,6 +90,8 @@
       <find>click</find>
       <find>sw</find>
       <find>header</find>
+      <find>value</find>
+      <find>def value</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/page_object/men's.py" />
         <option value="$PROJECT_DIR$/page_object/context_menu.py" />
         <option value="$PROJECT_DIR$/page_object/account_info.py" />
         <option value="$PROJECT_DIR$/utilis/tab.py" />
@@ -182,16 +139,17 @@
         <option value="$PROJECT_DIR$/utils/data/create_new_account_test_data.csv" />
         <option value="$PROJECT_DIR$/utils/data_handler.py" />
         <option value="$PROJECT_DIR$/page_object/log_in.py" />
-        <option value="$PROJECT_DIR$/utils/base.py" />
         <option value="$PROJECT_DIR$/utils/driver.py" />
-        <option value="$PROJECT_DIR$/page_object/sing_in.py" />
         <option value="$PROJECT_DIR$/features/test_sing_in.feature" />
         <option value="$PROJECT_DIR$/features/create_account.feature" />
         <option value="$PROJECT_DIR$/features/test_shoopping.feature" />
-        <option value="$PROJECT_DIR$/features/environment.py" />
-        <option value="$PROJECT_DIR$/features/steps/shopping_steps.py" />
         <option value="$PROJECT_DIR$/features/steps/sing_in_steps.py" />
+        <option value="$PROJECT_DIR$/features/environment.py" />
+        <option value="$PROJECT_DIR$/utils/base.py" />
+        <option value="$PROJECT_DIR$/page_object/sing_in.py" />
         <option value="$PROJECT_DIR$/features/test_shopping.feature" />
+        <option value="$PROJECT_DIR$/page_object/checkout.py" />
+        <option value="$PROJECT_DIR$/features/steps/shopping_steps.py" />
         <option value="$PROJECT_DIR$/page_object/home.py" />
       </list>
     </option>
@@ -209,6 +167,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,16 +191,21 @@
               <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
               <item name="page_object" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="AutomationTesting" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutomationTesting" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last.edited.regexp" value="Sample Text" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -276,7 +240,22 @@
     </option>
   </component>
   <component name="RunManager" selected="Behave.test_shopping.feature">
-    <configuration name="create_account.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="create_account.feature:I go to Sing In page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="AutomationTestingFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/feautures/create_account.feature" />
+      <SCENRAIO_NAMES SCENRAIO_NAMES="I go to Sing In page" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_create_account.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="AutomationTestingFramework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -290,7 +269,7 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_account.feature:I go to Sing In page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+    <configuration name="test_create_account.feature:I go to Sing In page (1)" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
       <module name="AutomationTestingFramework" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,8 +279,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/feautures/create_account.feature" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_create_account.feature" />
       <SCENRAIO_NAMES SCENRAIO_NAMES="I go to Sing In page" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_create_account.feature:I go to Sing In page" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="AutomationTestingFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\ierima\PycharmProjects\AutomationTesting\virtualenv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_create_account.feature" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -348,59 +341,22 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="open_link" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="AutomationTestingFramework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_cases" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\ierima\PycharmProjects\AutomationTesting\test_cases\test_singIn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_singIn.TestSingIn" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AutomationTestingFramework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/features" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_singIn.TestSingIn&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Behave.test_sing_in.feature" />
       <item itemvalue="Behave.create_account.feature:I go to Sing In page" />
-      <item itemvalue="Behave.create_account.feature" />
-      <item itemvalue="Lettuce.test_sing_in.feature:Sing in with email and password" />
-      <item itemvalue="Python.open_link" />
-      <item itemvalue="Python tests.Unittests for test_singIn.TestSingIn" />
+      <item itemvalue="Behave.test_create_account.feature" />
       <item itemvalue="Behave.test_shopping.feature" />
+      <item itemvalue="Behave.test_create_account.feature:I go to Sing In page" />
+      <item itemvalue="Behave.test_create_account.feature:I go to Sing In page (1)" />
+      <item itemvalue="Lettuce.test_sing_in.feature:Sing in with email and password" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Behave.test_shopping.feature" />
-        <item itemvalue="Behave.create_account.feature" />
+        <item itemvalue="Behave.test_create_account.feature" />
+        <item itemvalue="Behave.test_create_account.feature:I go to Sing In page (1)" />
+        <item itemvalue="Behave.test_create_account.feature:I go to Sing In page" />
         <item itemvalue="Behave.create_account.feature:I go to Sing In page" />
-        <item itemvalue="Python.open_link" />
-        <item itemvalue="Python tests.Unittests for test_singIn.TestSingIn" />
       </list>
     </recent_temporary>
   </component>
@@ -426,43 +382,46 @@
       <workItem from="1558100866989" duration="15196000" />
       <workItem from="1558168993783" duration="31813000" />
       <workItem from="1558681893906" duration="31585000" />
+      <workItem from="1558790610408" duration="28227000" />
+      <workItem from="1559057924581" duration="14416000" />
+      <workItem from="1559139233361" duration="15595000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_shopping_feature - 2019.05.24 at 21h 47m 05s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 40m 37s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 21h 47m 56s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 42m 44s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 21h 51m 44s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 52m 31s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 21h 52m 16s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 53m 09s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 06m 10s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 54m 07s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 08m 12s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 20h 59m 11s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 11m 26s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 21h 12m 25s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 14m 37s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 21h 27m 14s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 16m 23s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 21h 28m 40s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
-    <history-entry file="test_shopping_feature - 2019.05.24 at 22h 17m 08s.xml">
+    <history-entry file="test_shopping_feature - 2019.05.29 at 21h 32m 50s.xml">
       <configuration name="test_shopping.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167464000" />
+    <option name="totallyTimeSpent" value="225702000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -475,20 +434,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.22012103" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.20121029" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.40589198" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.3938619" weight="0.27659574" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.5106383" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" weight="0.46153846" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.89636916" weight="0.2831424" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" visible="true" weight="0.4091653" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.32569557" />
+      <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.1898527" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4977307" weight="0.2667758" />
-      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.63161874" weight="0.2749591" />
+      <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.63161874" weight="0.28150573" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.24222586" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.10363086" side_tool="true" weight="0.36006546" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -543,34 +501,37 @@
       </map>
     </option>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/features/steps/shopping_steps.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/features/steps/shopping_steps.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AutomationTesting$test_sing_in_feature.coverage" NAME="test_sing_in.feature Coverage Results" MODIFIED="1558698444632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$test_shopping_feature.coverage" NAME="test_shopping.feature Coverage Results" MODIFIED="1558725403417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature.coverage" NAME="create_account.feature Coverage Results" MODIFIED="1558715577571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$test_create_account_feature_I_go_to_Sing_In_page__1_.coverage" NAME="test_create_account.feature:I go to Sing In page (1) Coverage Results" MODIFIED="1559142107649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$test_shopping_feature.coverage" NAME="test_shopping.feature Coverage Results" MODIFIED="1559154532506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature.coverage" NAME="test_create_account.feature Coverage Results" MODIFIED="1559146909714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$open_link.coverage" NAME="open_link Coverage Results" MODIFIED="1554998142550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_cases" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$test_create_account_feature_I_go_to_Sing_In_page.coverage" NAME="test_create_account.feature:I go to Sing In page Coverage Results" MODIFIED="1559142041620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_sing_in_feature_Sing_in_with_email_and_password.coverage" NAME="test_sing_in.feature:Sing in with email and password Coverage Results" MODIFIED="1557591307347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature_I_go_to_Sing_In_page.coverage" NAME="create_account.feature:I go to Sing In page Coverage Results" MODIFIED="1557564365768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/config.py" />
-    <entry file="file://$PROJECT_DIR$/utils/values.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Python 64/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="320" selection-start-line="320" selection-end-line="320" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/support/wait.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -617,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="477" selection-start-line="477" selection-end-line="477" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://E:/Python 64/Lib/contextlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -647,9 +601,6 @@
           <caret line="1" column="127" selection-start-line="1" selection-start-column="127" selection-end-line="1" selection-end-column="127" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://E:/Python 64/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -696,13 +647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/Python 64/Lib/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -713,33 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1516239278/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="4788" column="8" selection-start-line="4788" selection-start-column="8" selection-end-line="4788" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1547">
-          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-          <folding>
-            <element signature="e#1#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="27" column="27" lean-forward="true" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -761,23 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
           <caret line="1924" column="4" selection-start-line="1924" selection-start-column="4" selection-end-line="1924" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="52" column="53" selection-start-line="52" selection-start-column="53" selection-end-line="52" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_sing_in.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -819,68 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/environment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="1328" selection-start-line="1328" selection-end-line="1328" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/matchers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_shopping.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -895,23 +733,170 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/shopping_steps.py">
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1516239278/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="1565" column="8" selection-start-line="1565" selection-start-column="8" selection-end-line="1565" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python 64/Lib/http/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="257" selection-start-line="257" selection-end-line="257" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/common/action_chains.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/support/wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="1328" selection-start-line="1328" selection-end-line="1328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/environment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_sing_in.feature">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/home.py">
+    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="58" column="83" selection-start-line="58" selection-start-column="83" selection-end-line="58" selection-end-column="83" />
+        <state relative-caret-position="153">
+          <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="113" column="8" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
+          <folding>
+            <element signature="e#1#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_shopping.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/checkout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="43" column="62" lean-forward="true" selection-start-line="43" selection-start-column="62" selection-end-line="43" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/shopping_steps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/matchers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>

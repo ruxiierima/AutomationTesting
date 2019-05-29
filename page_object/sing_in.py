@@ -50,11 +50,11 @@ class SingIn(Base):
 
     # Types email on 'Email Address' field from Create An Account
     def enter_email_to_create_account(self,email):
-        locator = self._create_account_email_field_id
-        if element.is_element_present(By.ID, locator):
-            self.type_into_a_field(By.ID ,locator, email)
+        field = self._create_account_email_field_id
+        if element.is_element_present(By.ID, field):
+            self.type_into_a_field(By.ID ,field, email)
         else:
-            raise TypeError("Element'%s' can not be found" % locator)
+            raise TypeError("Element'%s' can not be found" % field)
 
     # Clicks on 'Sing In' button
     def click_sing_in_button(self):
