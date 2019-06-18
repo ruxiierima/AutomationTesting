@@ -1,7 +1,7 @@
 from behave import *
 from page_object.home import home
 from page_object.checkout import checkout
-from nose.tools import assert_true ,assert_equal
+from nose.tools import assert_equal
 
 
 @given("I add {quantity} products to the cart")
@@ -20,8 +20,8 @@ def step_impl(context):
 @then("I check if all product details from cart summary are the same with products from the cart")
 def step_impl(context):
     home.move_to_cart()
-    expected_product_details=home.get_all_cart_products_details
-    summary_cart_product_details=checkout.get_all_cart_summary_products_details
+    expected_product_details = home.get_all_cart_products_details
+    summary_cart_product_details = checkout.get_all_cart_summary_products_details
 
     assert_equal(expected_product_details[0],summary_cart_product_details[0],'The product name is correct')
     assert_equal(expected_product_details[1], summary_cart_product_details[1], 'The product price is correct')

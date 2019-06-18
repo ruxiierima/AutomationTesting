@@ -1,5 +1,4 @@
-from datetime import time
-
+from utils.base import Base
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,7 +9,7 @@ from page_object.sing_in import SingIn
 from utils.driver import web_driver
 
 
-class Home():
+class Home(Base):
     instance = None
 
     def __init__(self):
@@ -91,18 +90,19 @@ class Home():
 
             cart_info=product.find_element(By.CLASS_NAME,'cart-info')
 
-            cart_price = cart_info.find_element(By.TAG_NAME, 'span')
             div_properties=cart_info.find_elements(By.TAG_NAME,'div')
 
             for div_prop in div_properties:
 
                 if div_prop.get_attribute('class') == 'product-name':
-                    products_name.append(div_prop.text)
+                    element=div_prop.find_element(By.TAG_NAME,'a')
+                    products_name.append(element.text)
                     cart_quant = div_prop.find_element(By.TAG_NAME, 'span')
 
                     if cart_quant.get_attribute('class') == 'quantity-formated':
                         products_quantity.append(cart_quant.text)
 
+            cart_price = cart_info.find_element(By.TAG_NAME, 'span')
             if cart_price.get_attribute('class') == 'price':
                 price = float(cart_price.text.split()[0].split('$')[1])
                 products_price.append(price)

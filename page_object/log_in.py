@@ -1,18 +1,14 @@
-
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
-
 from utils.base import Base
 from utils.driver import web_driver
-from utils.element import element
 
 
 class LogIn(Base):
 
+    #Class variable
     instance=None
 
-    #Class variables
+    #Class locators
     _log_in_page_locator_class='account-creation_form'
     _gender_list_xpath='radio-inline'
     _first_name_text_box_id='customer_firstname'

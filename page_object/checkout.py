@@ -1,9 +1,8 @@
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from utils.driver import web_driver
+from utils.base import Base
 
-class CheckOut():
+class CheckOut(Base):
     instance = None
 
     # Class locators
