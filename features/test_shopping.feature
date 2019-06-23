@@ -3,15 +3,15 @@
 @setup
 Feature: Shopping products
 """Product details from cart summary should
-be the same as those shown on the home page
+be the same as those shown on the home pagec
 """
 
-   Background: I go to home page
-    Given I load the website
+   #Background: I go to home page
+    #Given I load the website
 
   Scenario: Submit an order
     Given I add 7 products to the cart
-    Then I check if the expected quantity: '7' added to the cart is correct
     When I click on check out button
     Then I check if all product details from cart summary are the same with products from the cart
+    And I check if the expected quantity: '7' added to the cart is correct
 

@@ -5,12 +5,12 @@ from nose.tools import assert_equal
 
 
 @given("I add {quantity} products to the cart")
-def step_impl(context,quantity):
+def step_impl(context, quantity):
     home.add_products_in_cart(quantity)
 
 @then("I check if the expected quantity: '{expected_quantity}' added to the cart is correct")
 def step_impl(context,expected_quantity):
-    current_quantity=home.get_shooping_cart_items
+    current_quantity=home.get_shopping_cart_items
     assert_equal(expected_quantity,current_quantity,"The expected quantity added to the cart is correct")
 
 @when("I click on check out button")

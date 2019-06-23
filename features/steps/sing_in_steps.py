@@ -76,10 +76,12 @@ def step_impl(context, mandatory):
 
 @then("I verify if the account was created")
 def step_impl(context):
+
     password = DataHandler().test_data('password')
     account_name = DataHandler().test_data('first_name') + " " + DataHandler().test_data('last_name')
 
     context.execute_steps(u"""
+        given I sing out
         given I go to Sing In page
         given I sing in with email:{email} and pass:{password}
         when I press the Sing In button
@@ -88,7 +90,7 @@ def step_impl(context):
     logging.info("The account was created with email: %s and password: %s ", (random_email, password))
 
 
-@Then("I sing out")
+@given("I sing out")
 def step_impl(context):
     home.click_sing_out_button()
 
@@ -97,4 +99,4 @@ def step_impl(context):
 def step_impl(context, expected_account_name):
     current_account_name = home.get_account_name
     assert_equal(current_account_name, expected_account_name)
-    home.click_sing_out_button()
+

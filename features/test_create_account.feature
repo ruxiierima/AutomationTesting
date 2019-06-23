@@ -9,7 +9,6 @@ at the top-right corner of the page
 """
 
    Background: I navigate to Sing In page
-    Given I load the website
     Given I go to Sing In page
     Then I verify if text: Please enter your email address to create an account. is present in Create Account field
 
@@ -21,7 +20,6 @@ at the top-right corner of the page
 
     Given I insert random email into 'Create account' field
     When I create a new account with mandatory user information
-    Then I sing out
     Then I verify if the account was created
 
 

@@ -7,6 +7,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from page_object.checkout import CheckOut
 from page_object.sing_in import SingIn
 from utils.driver import web_driver
+from utils.element import element
 
 
 class Home(Base):
@@ -43,6 +44,10 @@ class Home(Base):
         sing_out_button.click()
 
     @property
+    def already_sing_in(self):
+        return element.is_element_present(By.CLASS_NAME,self._sing_out_button_class)
+
+    @property
     def get_account_name(self):
         element = self.driver.find_element(By.CLASS_NAME, self._account_name_class)
         return element.text
@@ -58,19 +63,19 @@ class Home(Base):
             i = index + 1
             hover = ActionChains(self.driver).move_to_element(product)
             hover.perform()
-
+            #self.driver.switch_to.default_content()
             _add_to_cart_locator_xpath='//*[@id="homefeatured"]/li[%s]/div/div[2]/div[2]/a[1]/span'%i
             wait.until(EC.element_to_be_clickable((By.XPATH,_add_to_cart_locator_xpath)))
             self.driver.implicitly_wait(2)
-            self.driver.find_element(By.XPATH,_add_to_cart_locator_xpath).click()
-
+            add_product = self.driver.find_element(By.XPATH,_add_to_cart_locator_xpath)
+            ActionChains(self.driver).move_to_element(add_product).click()
 
             wait.until(EC.element_to_be_clickable((By.XPATH, self._continue_shopping_locator_xpath)))
             self.driver.implicitly_wait(2)
             self.driver.find_element(By.XPATH, self._continue_shopping_locator_xpath ).click()
 
     @property
-    def get_shooping_cart_items(self):
+    def get_shopping_cart_items(self):
         element=self.driver.find_element(By.CLASS_NAME, self._shopping_cart_class)
         text=element.text
         for char in text:
@@ -80,34 +85,33 @@ class Home(Base):
             return text
 
     @property
+    def get_number_of_items(self):
+        cart_elements = self.driver.find_element(By.CLASS_NAME,self._cart_products_class).find_elements(By.TAG_NAME,'dt')
+        return len(cart_elements)
+
+    @property
     def get_all_cart_products_details(self):
-        products_name=[]
-        products_price=[]
-        products_quantity=[]
+        products_name = []
+        products_price = []
+        products_quantity = []
 
-        product_list=self.driver.find_element(By.CLASS_NAME,self._cart_products_class).find_elements(By.TAG_NAME,'dt')
+        product_list = self.driver.find_element(By.CLASS_NAME, self._cart_products_class).find_elements(By.TAG_NAME,
+                                                                                                        'dt')
         for product in product_list:
+            cart_info = product.find_element(By.CLASS_NAME, 'cart-info')
 
-            cart_info=product.find_element(By.CLASS_NAME,'cart-info')
+            product_name = (cart_info.find_element(By.XPATH, ".//*[@class='cart_block_product_name']")).get_attribute(
+                'title')
+            products_name.append(product_name)
 
-            div_properties=cart_info.find_elements(By.TAG_NAME,'div')
+            product_price = float(( cart_info.find_element(By.XPATH, ".//*[@class='price']").text).split()[0].split('$')[1])
+            products_price.append(product_price)
 
-            for div_prop in div_properties:
+            product_quantity=int(cart_info.find_element(By.XPATH,".//*[@class='quantity']").text)
+            products_quantity.append(product_quantity)
 
-                if div_prop.get_attribute('class') == 'product-name':
-                    element=div_prop.find_element(By.TAG_NAME,'a')
-                    products_name.append(element.text)
-                    cart_quant = div_prop.find_element(By.TAG_NAME, 'span')
+        return products_name, products_price, products_quantity
 
-                    if cart_quant.get_attribute('class') == 'quantity-formated':
-                        products_quantity.append(cart_quant.text)
-
-            cart_price = cart_info.find_element(By.TAG_NAME, 'span')
-            if cart_price.get_attribute('class') == 'price':
-                price = float(cart_price.text.split()[0].split('$')[1])
-                products_price.append(price)
-
-            return products_name, products_price, products_quantity
 
     def move_to_cart(self):
         ActionChains(self.driver).move_to_element(
