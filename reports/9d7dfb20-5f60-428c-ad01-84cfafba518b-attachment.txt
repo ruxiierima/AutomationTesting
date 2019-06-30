@@ -1,2 +1,0 @@
-An account can be created even if only
-the mandatory information in the registration form are filled in

@@ -3,6 +3,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.select import Select
 
+from utils.data_handler import DataHandler
 from utils.driver import Driver
 from behave import given, when, then
 try:
@@ -18,7 +19,7 @@ except ImportError:
 ## Base class -helper functionality
 class Base():
 
-    TIMEOUT=10
+    TIMEOUT = 10
     instance = None
 
     @classmethod
@@ -42,8 +43,8 @@ class Base():
     def delete_cookies(self):
         self.driver.delete_all_cookies()
 
-    def move_to_element(self, element_locator):
-        element = self.driver.find_element_by_id(element_locator)
+    def move_to_element(self,  how, what):
+        element = self.driver.find_element(by=how, value=what)
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()
 
@@ -62,6 +63,12 @@ class Base():
         select = Select(self.driver.find_element(by=how, value=where))
         select.select_by_visible_text(value)
 
+    def select_radio_button(self,how,where,value):
+        radio_buttons = self.driver.find_elements(by=how,value=where)
+        for item in radio_buttons:
+            if value in item.text and not item.is_selected():
+                item.click()
+
     #value format needs to be like this: 'dd/mm/yyy'
     def type_into_date_picker(self,how,where,value):
         data_list=str(value).split('/')
@@ -79,7 +86,31 @@ class Base():
             element=item.find_element(By.ID,str(list(dictionary_data.keys())[index]))
             Select(element).select_by_value(data_list[index])
 
+    def get_acount_info_from_csv(self,email):
+        account_information={'name':None,
+                         'address':None,
+                         'city_state_postal_code':None,
+                         'country':None,
+                         'phone':None
+                         }
 
+        account_name = DataHandler().test_data('first_name',email) + " " + DataHandler().test_data('last_name',email)
+        account_information['name'] = account_name
+
+        account_address = str(DataHandler().test_data('address_1',email))
+        account_information['address'] = account_address
+
+        account_city_state_postal = DataHandler().test_data('city',email) + ", "\
+                                    + DataHandler().test_data('state',email)+ " " + str(DataHandler().test_data('postal_code',email))
+        account_information['city_state_postal_code']=account_city_state_postal
+
+        account_country = DataHandler().test_data('country',email)
+        account_information['country']=account_country
+
+        account_phone = str(DataHandler().test_data('mobile_phone',email))
+        account_information['phone']=account_phone
+
+        return account_information
 
 
 

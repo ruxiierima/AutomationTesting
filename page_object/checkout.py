@@ -1,6 +1,8 @@
 from selenium.webdriver.common.by import By
+from nose.tools import assert_equal, assert_raises
 from utils.driver import web_driver
 from utils.base import Base
+from selenium.webdriver.support.color import Color
 
 class CheckOut(Base):
     instance = None
@@ -9,10 +11,11 @@ class CheckOut(Base):
     _checkout_page_locator_id = "order"
     _check_out_id = "button_order_cart"
     _cart_summary_id = "cart_summary"
+    _proceed_to_checkout_button_xpath = "(//span[contains(.,'Proceed to checkout')])[2]"
+    _checkout_stept_css='.step.clearfix'
 
     def __init__(self):
         self.driver = web_driver.get_driver()
-        #WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.ID, self._checkout_page_locator_id)))
 
     @classmethod
     def get_instance(cls):
@@ -27,11 +30,11 @@ class CheckOut(Base):
     #Returns a tuple of lists with all products properties
     @property
     def get_all_cart_summary_products_details(self):
-        product_name=[]
-        products_quantity=[]
-        products_price=[]
+        product_name = []
+        products_quantity = []
+        products_price = []
 
-        table_id=self.driver.find_element(By.ID,self._cart_summary_id)
+        table_id = self.driver.find_element(By.ID,self._cart_summary_id)
         body_element = table_id.find_element(By.TAG_NAME, "tbody")
         rows = body_element.find_elements(By.TAG_NAME, "tr")
 
@@ -53,4 +56,133 @@ class CheckOut(Base):
 
         return product_name, products_price,products_quantity
 
+    @property
+    def get_current_step(self):
+        checkout_steps_class = self.driver.find_element(By.CSS_SELECTOR,self._checkout_stept_css)
+        checkout_steps = checkout_steps_class.find_elements(By.TAG_NAME,'li')
+        for step in checkout_steps:
+            step_color = step.value_of_css_property('background-image')
+            color = Color.from_string(step_color).hex
+            if color == 'green':
+                return step.text
+
+    def click_on_check_out(self):
+        self.driver.find_element(By.XPATH,self._proceed_to_checkout_button_xpath).click()
+        #current_step=self.get_current_step
+        #if current_step == 'Address':
+            #return Address()
+        #if current_step == 'Sing In':
+            #return LogIn()
+
+class Address(CheckOut):
+
+    instance = None
+
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Address()
+        return cls.instance
+
+    #Class locators
+    _delivery_address_css='.address.item.box'
+
+    def get_delivery_address(self):
+        address_information={'name':None,
+                         'address':None,
+                         'city_state_postal_code':None,
+                         'country':None,
+                         'phone':None
+                         }
+
+        delivery_address = self.driver.find_element(By.CSS_SELECTOR , self._delivery_address_css)
+        all_information = delivery_address.find_elements(By.TAG_NAME,'li')
+        for information in all_information:
+
+            class_attribute = information.get_attribute('class')
+
+            if class_attribute == 'address_firstname address_lastname':
+                address_information['name'] = information.text
+
+            if class_attribute == 'address_address1 address_address2':
+                address_information['address'] = information.text
+
+            if class_attribute == 'address_city address_state_name address_postcode':
+                address_information['city_state_postal_code'] = information.text
+
+            if class_attribute =='address_country_name':
+                address_information['country'] = information.text
+
+            if class_attribute == 'address_phone_mobile':
+                address_information['phone'] = information.text
+
+        return address_information
+
+    def verify_account_information(self,email):
+        info_from_csv = self.get_acount_info_from_csv(email)
+        info_from_web = self.get_delivery_address()
+        assert_equal(info_from_csv,info_from_web)
+
+class Shipping(CheckOut):
+
+    instance = None
+
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Shipping()
+        return cls.instance
+
+    #Class locators
+    _terms_checkbox_class='checker'
+
+    def agree_to_the_terms(self):
+        self.driver.find_element(By.CLASS_NAME,self._terms_checkbox_class).click()
+
+class Payment(CheckOut):
+
+    instance = None
+
+    @classmethod
+    def get_instance(cls):
+        if cls.instance is None:
+            cls.instance = Payment()
+        return cls.instance
+
+    #Class locators
+    _payment_methods_xpath=".//*[@id='HOOK_PAYMENT']//*[@class='row']"
+    _summary_payment_css='.box.cheque-box'
+    _confirm_order_button_xpath="//span[contains(.,'I confirm my order')]"
+    _order_status_css='.alert.alert-success'
+
+    # Choose the payment method for the order
+    # payment_method the desired method (available options are: bank/check)
+    def choose_payment_method(self,payment_method):
+        payment_methods = self.driver.find_elements(By.XPATH,self._payment_methods_xpath)
+
+        for method in payment_methods:
+            if payment_method.upper() in method.text.upper():
+                method.find_element(By.TAG_NAME,'a').click()
+                break
+        else:
+            raise Exception("%s not a valid payment method" % payment_method)
+
+    @property
+    def get_chosen_payment_method(self):
+        return self.driver.find_element(By.CSS_SELECTOR,self._summary_payment_css).text
+
+    def click_confirm_order(self):
+        self.driver.find_element(By.XPATH,self._confirm_order_button_xpath).click()
+
+    @property
+    def is_order_complete(self):
+        try:
+            order_status= self.driver.find_element(By.CSS_SELECTOR,self._order_status_css)
+            return 'complete' in order_status.text
+        except:
+            return False
+
 checkout = CheckOut.get_instance()
+address = Address.get_instance()
+shipping = Shipping.get_instance()
+payment = Payment.get_instance()

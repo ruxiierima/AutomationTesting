@@ -40,10 +40,9 @@ class LogIn(Base):
     #Choose the gender by clicking an option from Title field
     def select_gender(self,gender):
 
-        #WebDriverWait(self.driver,30).until((lambda x: x.find_element(By.CLASS_NAME, self._log_in_page_locator_class)))
         self.driver.implicitly_wait(self.TIMEOUT)
 
-        gender_list=self.driver.find_elements(By.CLASS_NAME,self._gender_list_xpath)
+        gender_list = self.driver.find_elements(By.CLASS_NAME, self._gender_list_xpath)
 
         for item in gender_list:
             if gender in item.text and not item.is_selected() :
@@ -52,7 +51,7 @@ class LogIn(Base):
     #Fill all the TEXT BOXES
 
     def enter_first_name(self,first_name):
-        self.type_into_a_field(By.ID ,self._first_name_text_box_id,first_name)
+        self.type_into_a_field(By.ID, self._first_name_text_box_id, first_name)
 
     def enter_first_name_address(self,first_name_address):
         self.type_into_a_field(By.ID, self._first_name_address_text_box_id, first_name_address)

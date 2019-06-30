@@ -26,6 +26,7 @@ class Driver():
         chrome_options = Options()
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--start-maximized")
+        chrome_options.add_argument("--no-sandbox")
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
 
     def get_driver(self):

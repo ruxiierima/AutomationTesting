@@ -4,19 +4,33 @@ import pandas as pd
 
 class DataHandler():
 
-    def test_data(self,name):
+    # Read data from csv files
+    # name - the header of a column
+    # row_value - de desired email for witch you want to get account information
+    def test_data(self, header, row_value):
 
-        # names of files to read from
+        # name of file to read from
         #r_filenameCSV = '../../AutomationTesting/features'+file_name+'.csv'
 
-        r_filenameCSV ='C:/Users/ierima/PycharmProjects/AutomationTesting/utils/data/create_new_account_test_data.csv'
+        r_filenameCSV ='C:/Users/ierima/PycharmProjects/AutomationTesting/utils/data/accounts_information_test_data.csv'
+
         # read the data
-        csv_read = pd.read_csv(r_filenameCSV,header=0)
-        return csv_read[name][0]
+        csv_read = pd.read_csv(r_filenameCSV)
+        for index,value in enumerate(csv_read['email']):
+            if value == row_value:
+                location_in_csv = index
+                break
+        else:
+            raise Exception('Value %s not found in CSV' %row_value)
+        return csv_read[header][location_in_csv]
+
 
 
     domains = ["hotmail.com", "gmail.com", "aol.com", "mail.com", "mail.kz", "yahoo.com"]
     letters = string.ascii_lowercase[:12]
+
+    def generate_random_emails(self):
+        return [self.get_one_random_name(self.letters) + '@' + self.get_one_random_domain(self.domains) for i in range(1)][0]
 
     def get_one_random_domain(self,domains):
         return random.choice(domains)
@@ -24,8 +38,7 @@ class DataHandler():
     def get_one_random_name(selff,letters):
         return ''.join(random.choice(letters) for i in range(7))
 
-    def generate_random_emails(self):
-        return [self.get_one_random_name(self.letters) + '@' + self.get_one_random_domain(self.domains) for i in range(1)][0]
+
 
 """
 class DataHandler():

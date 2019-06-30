@@ -1,3 +1,0 @@
-  When a user want to login with an VALID email and a WRONG password
-  should NOT be able to login successfully and an error message should
-  appear:'Authentication failed'

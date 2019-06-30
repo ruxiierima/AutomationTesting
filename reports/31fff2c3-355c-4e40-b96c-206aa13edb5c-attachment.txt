@@ -1,3 +1,0 @@
-When a user want to login with an valid email/password
-should be able to login successfully and the account
-name should be the user full name.

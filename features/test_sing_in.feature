@@ -2,6 +2,7 @@
 Feature: Sing In
 
   Background: I navigate to Sing In page
+    Given I load the website
     Given I go to Sing In page
 
   """

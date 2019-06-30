@@ -11,7 +11,7 @@ except ImportError:
     exit(1)
 
 ## Navigation class - commun function for browser navigation
-class Navigation(Base):
+class Navigation():
 
     def back(self,driver):
         try:
