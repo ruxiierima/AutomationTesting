@@ -14,4 +14,5 @@ be the same as those shown on the home page
     When I click on check out button
     Then I check if all product details from the cart are the same with products from cart summary
     And I check if the expected quantity: '7' added to the cart is correct
+    And I check if total amount is correct
 

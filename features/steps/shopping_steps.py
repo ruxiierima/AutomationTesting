@@ -20,7 +20,6 @@ def step_impl(context, expected_quantity):
 def step_impl(context):
     home.click_on_cart()
 
-
 @then("I check if all product details from the cart are the same with products from cart summary")
 def step_impl(context):
     home.move_to_cart()
@@ -71,3 +70,11 @@ def step_impl(context):
 @then("The confirmation of the {payment_method} payment should be displayed")
 def step_impl(context,payment_method):
     assert payment_method.upper() in payment.get_chosen_payment_method.upper()
+
+@step("I check if total amount is correct")
+def step_impl(context):
+    products_total_price = checkout.calculate_products_total_price()
+    shipping_tax = checkout.get_shipping_tax
+    expected_total_price = products_total_price + shipping_tax
+    assert_equal(expected_total_price, checkout.get_total_amount, "The total amount:%f is displayed correct"
+                 % expected_total_price)

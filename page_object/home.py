@@ -36,19 +36,9 @@ class Home(Base):
     _proceed_to_checkout_xpath = "//span[contains(.,'Proceed to checkout')]"
     _check_out_cart_xpath = "//span[contains(.,'Check out')]"
     _logo_button_css = '.logo.img-responsive'
-
-    def go_to_homescreen(self):
-        self.driver.find_element(By.CSS_SELECTOR,self._logo_button_css).click()
-
-    def click_sing_in_button(self):
-        sing_in_button = self.driver.find_element_by_class_name(self._sing_in_button_locator)
-        sing_in_button.click()
-        return SingIn()
-
-    def click_sing_out_button(self):
-        self.driver.implicitly_wait(10)
-        sing_out_button = self.driver.find_element(By.CLASS_NAME, self._sing_out_button_class)
-        sing_out_button.click()
+    _search_field_id = "search_query_top"
+    _search_results_css = '.product_list.grid.row'
+    _sort_method_xpath = ".//*[@id='productsSortForm']//*[@id='selectProductSort']"
 
     @property
     def already_sing_in(self):
@@ -56,14 +46,87 @@ class Home(Base):
 
     @property
     def get_account_name(self):
-        element = self.driver.find_element(By.CLASS_NAME, self._account_name_class)
-        return element.text
+        account_name = self.driver.find_element(By.CLASS_NAME, self._account_name_class)
+        return account_name.text
+
+    @property
+    def get_shopping_cart_items(self):
+        shopping_cart = self.driver.find_element(By.CLASS_NAME, self._shopping_cart_class)
+        text = shopping_cart.text
+        for char in text:
+            if char.isdigit():
+                return char
+        else:
+            return text
+
+    @property
+    def get_number_of_items(self):
+        cart_elements = self.driver.find_element(By.CLASS_NAME, self._cart_products_class).find_elements(By.TAG_NAME,
+                                                                                                         'dt')
+        return len(cart_elements)
+
+    @property
+    def get_list_of_products(self):
+        product_containers_id = self.driver.find_element(By.ID, self._products_container_id)
+        return product_containers_id.find_elements_by_tag_name("li")
+
+    @property
+    def get_list_of_results_name(self):
+        products_name = []
+
+        product_containers = self.driver.find_element(By.CSS_SELECTOR, self._search_results_css)
+        product_list = product_containers.find_elements_by_tag_name("li")
+        for product in product_list:
+            name = product.text.split('\n')[0]
+            if name is not "":
+                products_name.append(product.text.split('\n')[0])
+        return products_name
+
+    @property
+    def get_list_of_results_price(self):
+        products_price = []
+
+        product_containers = self.driver.find_element(By.CSS_SELECTOR, self._search_results_css)
+        product_list = product_containers.find_elements_by_tag_name("li")
+        for product in product_list:
+            name = product.text.split('\n')[0]
+            if name is not "":
+                price_text = product.text.split('\n')[1]
+                products_price.append(float(price_text.split()[0].split('$')[1]))
+        return products_price
+
+    @property
+    def get_all_cart_products_details(self):
+        products_name = []
+        products_price = []
+        products_quantity = []
+
+        product_list = self.driver.find_element(By.CLASS_NAME, self._cart_products_class).find_elements(By.TAG_NAME,
+                                                                                                        'dt')
+        for product in product_list:
+            cart_info = product.find_element(By.CLASS_NAME, 'cart-info')
+
+            product_name = (cart_info.find_element(By.XPATH, ".//*[@class='cart_block_product_name']")).get_attribute(
+                'title')
+            products_name.append(product_name)
+
+            product_price = float(
+                cart_info.find_element(By.XPATH, ".//*[@class='price']").text.split()[0].split('$')[1])
+            products_price.append(product_price)
+
+            product_quantity = int(cart_info.find_element(By.XPATH, ".//*[@class='quantity']").text)
+            products_quantity.append(product_quantity)
+
+        return products_name, products_price, products_quantity
+
+    def search_product(self, product_name):
+        self.type_into_a_field(By.ID, self._search_field_id, product_name)
+        self.driver.find_element(By.ID, self._search_field_id).submit()
 
     def add_products_in_cart(self, quantity):
         wait = WebDriverWait(self.driver, self.TIMEOUT)
-        #wait.until(EC.EC.visibility_of_element_located((By.ID,self._products_container_id)))
-        product_containers_id = self.driver.find_element(By.ID, self._products_container_id)
-        product_containers = product_containers_id.find_elements_by_tag_name("li")
+
+        product_containers = self.get_list_of_products
 
         for index, product in enumerate(product_containers):
             if index == int(quantity):
@@ -85,8 +148,7 @@ class Home(Base):
     # product_name - The name of the desired product
     def add_specific_product_in_cart(self, desired_product_name):
         wait = WebDriverWait(self.driver, self.TIMEOUT)
-        product_containers_id = self.driver.find_element(By.ID, "homefeatured")
-        product_containers = product_containers_id.find_elements_by_tag_name("li")
+        product_containers = self.get_list_of_products
 
         for index, product in enumerate(product_containers):
             product_name = product.text.split('\n')[0]
@@ -100,46 +162,21 @@ class Home(Base):
                 self.driver.find_element(By.XPATH, _add_to_cart_locator_xpath).click()
                 self.driver.find_element(By.XPATH, self._continue_shopping_locator_xpath).click()
                 break
-
-    @property
-    def get_shopping_cart_items(self):
-        element = self.driver.find_element(By.CLASS_NAME, self._shopping_cart_class)
-        text = element.text
-        for char in text:
-            if char.isdigit():
-                return char
         else:
-            return text
+            raise Exception("Product '%s' not fount" % desired_product_name)
 
-    @property
-    def get_number_of_items(self):
-        cart_elements = self.driver.find_element(By.CLASS_NAME, self._cart_products_class).find_elements(By.TAG_NAME,
-                                                                                                         'dt')
-        return len(cart_elements)
+    def go_to_homescreen(self):
+        self.driver.find_element(By.CSS_SELECTOR, self._logo_button_css).click()
 
-    @property
-    def get_all_cart_products_details(self):
-        products_name = []
-        products_price = []
-        products_quantity = []
+    def click_sing_in_button(self):
+        sing_in_button = self.driver.find_element_by_class_name(self._sing_in_button_locator)
+        sing_in_button.click()
+        return SingIn()
 
-        product_list = self.driver.find_element(By.CLASS_NAME, self._cart_products_class).find_elements(By.TAG_NAME,
-                                                                                                        'dt')
-        for product in product_list:
-            cart_info = product.find_element(By.CLASS_NAME, 'cart-info')
-
-            product_name = (cart_info.find_element(By.XPATH, ".//*[@class='cart_block_product_name']")).get_attribute(
-                'title')
-            products_name.append(product_name)
-
-            product_price = float(
-                (cart_info.find_element(By.XPATH, ".//*[@class='price']").text).split()[0].split('$')[1])
-            products_price.append(product_price)
-
-            product_quantity = int(cart_info.find_element(By.XPATH, ".//*[@class='quantity']").text)
-            products_quantity.append(product_quantity)
-
-        return products_name, products_price, products_quantity
+    def click_sing_out_button(self):
+        self.driver.implicitly_wait(10)
+        sing_out_button = self.driver.find_element(By.CLASS_NAME, self._sing_out_button_class)
+        sing_out_button.click()
 
     def click_check_out_button(self):
         self.move_to_cart()
@@ -152,6 +189,9 @@ class Home(Base):
     def click_on_cart(self):
         self.driver.find_element(By.XPATH, "//b[contains(.,'Cart')]").click()
         return CheckOut()
+
+    def choose_sort_method(self, method):
+        self.select_value_from_dropdown_list(By.XPATH, self._sort_method_xpath, method)
 
 
 home = Home.get_instance()
