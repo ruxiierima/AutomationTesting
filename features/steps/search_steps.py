@@ -23,5 +23,10 @@ def step_impl(context, sort_method):
 @then("Results should be displayed by {sort_method}")
 def step_impl(context, sort_method):
     displayed_products_price = home.get_list_of_results_price
-    expected_list = home.get_list_of_results_price.sort()
+    expected_list = home.get_list_of_results_price
+    if 'Lowest' in sort_method:
+        expected_list.sort()
+    if 'Highest' in sort_method:
+        expected_list.sort(reverse=True)
+
     assert_equal(displayed_products_price, expected_list)

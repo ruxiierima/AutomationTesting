@@ -9,7 +9,7 @@ and choose a sort method the results should
 be displayed by chosen method and should be relevant
 """
 
-  Scenario Outline: Search a product
+  Scenario Outline: Sort products
     Given I load the website
     When I search product 'dress'
     And I sort results by <sort_method>

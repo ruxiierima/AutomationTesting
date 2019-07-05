@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_LICENTA/~WRL3974.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/shopping_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/shopping_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/test_cart_info.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_cart_info.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_object/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/checkout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_object/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_object/log_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/log_in.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_object/sing_in.py" beforeDir="false" afterPath="$PROJECT_DIR$/page_object/sing_in.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/data_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/data_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/steps/search_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/search_steps.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/test_search_product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_sort_products.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,35 +18,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/features/steps/search_steps.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/test_search_product.feature">
+        <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_object/home.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="265">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -61,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="87">
+              <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -71,10 +49,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/steps/shopping_steps.py">
+        <entry file="file://$PROJECT_DIR$/features/steps/search_steps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="68" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -82,11 +60,101 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="186">
+              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="uml://Python/#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>Python</ID>
+              <OriginalElement>#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py</OriginalElement>
+              <nodes>
+                <node x="926.8055555555555" y="154.0">page_object.log_in.LogIn</node>
+                <node x="495.0" y="231.0">page_object.checkout.Payment</node>
+                <node x="731.8055555555555" y="154.0">page_object.home.Home</node>
+                <node x="250.80555555555554" y="154.0">page_object.checkout.CheckOut</node>
+                <node x="501.80555555555554" y="154.0">page_object.sing_in.SingIn</node>
+                <node x="251.0" y="231.0">page_object.checkout.Address</node>
+                <node x="643.25" y="77.0">utils.base.Base</node>
+                <node x="674.75" y="0.0">object</node>
+                <node x="0.0" y="231.0">page_object.checkout.Shipping</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="page_object.home.Home" target="utils.base.Base">
+                  <point x="0.0" y="-13.5" />
+                  <point x="819.3055555555555" y="134.0" />
+                  <point x="726.375" y="134.0" />
+                  <point x="16.625" y="13.5" />
+                </edge>
+                <edge source="page_object.checkout.Shipping" target="page_object.checkout.CheckOut">
+                  <point x="0.0" y="-13.5" />
+                  <point x="115.5" y="206.0" />
+                  <point x="289.30555555555554" y="206.0" />
+                  <point x="-77.0" y="13.5" />
+                </edge>
+                <edge source="page_object.checkout.Payment" target="page_object.checkout.CheckOut">
+                  <point x="0.0" y="-13.5" />
+                  <point x="607.0" y="206.0" />
+                  <point x="443.30555555555554" y="206.0" />
+                  <point x="77.0" y="13.5" />
+                </edge>
+                <edge source="page_object.sing_in.SingIn" target="utils.base.Base">
+                  <point x="-1.1368683772161603E-13" y="-13.5" />
+                  <point x="606.8055555555554" y="134.0" />
+                  <point x="693.125" y="134.0" />
+                  <point x="-16.625" y="13.5" />
+                </edge>
+                <edge source="page_object.checkout.Address" target="page_object.checkout.CheckOut">
+                  <point x="0.0" y="-13.5" />
+                  <point x="363.0" y="206.0" />
+                  <point x="366.30555555555554" y="206.0" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+                <edge source="page_object.log_in.LogIn" target="utils.base.Base">
+                  <point x="0.0" y="-13.5" />
+                  <point x="1024.8055555555557" y="124.0" />
+                  <point x="759.625" y="124.0" />
+                  <point x="49.875" y="13.5" />
+                </edge>
+                <edge source="page_object.checkout.CheckOut" target="utils.base.Base">
+                  <point x="0.0" y="-13.5" />
+                  <point x="366.30555555555554" y="124.0" />
+                  <point x="659.875" y="124.0" />
+                  <point x="-49.875" y="13.5" />
+                </edge>
+                <edge source="utils.base.Base" target="object">
+                  <point x="0.0" y="-13.5" />
+                  <point x="0.0" y="13.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.8749999999999999" x="264.28571428571433" y="155.2857142857143" />
+              <SelectedNodes>
+                <node>utils.base.Base</node>
+              </SelectedNodes>
+              <Categories />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page_object/home.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,8 +162,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+            <state relative-caret-position="173">
+              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -104,13 +172,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_object/checkout.py">
+        <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="78" />
+            <state relative-caret-position="99">
+              <caret line="37" column="13" selection-end-line="83" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -146,7 +223,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test_cases/open_link.py" />
         <option value="$PROJECT_DIR$/page_object/test_singIn.py" />
         <option value="$PROJECT_DIR$/test_cases/test_singIn.py" />
         <option value="$PROJECT_DIR$/page_object/shared.py" />
@@ -196,6 +272,7 @@
         <option value="$PROJECT_DIR$/utils/base.py" />
         <option value="$PROJECT_DIR$/features/test_search_product.feature" />
         <option value="$PROJECT_DIR$/page_object/home.py" />
+        <option value="$PROJECT_DIR$/features/test_sort_products.feature" />
         <option value="$PROJECT_DIR$/features/steps/search_steps.py" />
       </list>
     </option>
@@ -214,6 +291,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,14 +330,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last.edited.regexp" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/features/test_complete_order.feature" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/features/test_sort_products.feature" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -292,7 +369,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Behave.test_search_product.feature">
+  <component name="RunManager" selected="Behave.all_tests">
     <configuration name="all_tests" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <module name="AutomationTestingFramework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -307,6 +384,7 @@
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_complete_order.feature" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_create_account.feature" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_sing_in.feature" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_sort_products.feature" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -352,20 +430,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_search_product.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
-      <module name="AutomationTestingFramework" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_search_product.feature" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_sing_in.feature" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <module name="AutomationTestingFramework" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -377,6 +441,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_sing_in.feature" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_sort_products.feature" type="PyBehaveRunConfigurationType" factoryName="Behave" temporary="true">
+      <module name="AutomationTestingFramework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Users\ierima\PycharmProjects\AutomationTesting\virtualenv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <WHAT_TO_RUN WHAT_TO_RUN="$PROJECT_DIR$/features/test_sort_products.feature" />
       <option name="ADDITIONAL_ARGS" value="" />
       <method v="2" />
     </configuration>
@@ -423,13 +501,13 @@
       <item itemvalue="Behave.test_create_account.feature" />
       <item itemvalue="Behave.test_cart_info.feature" />
       <item itemvalue="Behave.test_complete_order.feature" />
-      <item itemvalue="Behave.test_search_product.feature" />
+      <item itemvalue="Behave.test_sort_products.feature" />
       <item itemvalue="Lettuce.test_sing_in.feature:Sing in with email and password" />
       <item itemvalue="Python.base" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Behave.test_search_product.feature" />
+        <item itemvalue="Behave.test_sort_products.feature" />
         <item itemvalue="Behave.test_create_account.feature" />
         <item itemvalue="Behave.test_complete_order.feature" />
         <item itemvalue="Behave.test_cart_info.feature" />
@@ -472,23 +550,12 @@
       <workItem from="1561287799371" duration="18789000" />
       <workItem from="1561309657303" duration="6903000" />
       <workItem from="1561360570292" duration="89907000" />
-      <workItem from="1561914512964" duration="29537000" />
+      <workItem from="1561914512964" duration="30907000" />
+      <workItem from="1562165692026" duration="15445000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 25m 37s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 26m 45s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 29m 54s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 40m 46s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_search_product_feature - 2019.07.02 at 22h 42m 23s.xml">
       <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
@@ -507,9 +574,21 @@
     <history-entry file="test_search_product_feature - 2019.07.02 at 22h 57m 20s.xml">
       <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
+    <history-entry file="test_search_product_feature - 2019.07.03 at 17h 21m 57s.xml">
+      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_search_product_feature - 2019.07.03 at 17h 24m 10s.xml">
+      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="test_search_product_feature - 2019.07.03 at 17h 30m 23s.xml">
+      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.07.05 at 17h 44m 21s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="425595000" />
+    <option name="totallyTimeSpent" value="442410000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -521,20 +600,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.2753404" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.27987897" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.40589198" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.20130932" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.3938619" weight="0.27659574" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.497545" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.89636916" weight="0.497545" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.1898527" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" weight="0.29787233" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" visible="true" weight="0.36006546" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.24222586" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1732224" side_tool="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -651,8 +729,8 @@
     <SUITE FILE_PATH="coverage/AutomationTesting$test_sing_in_feature.coverage" NAME="test_sing_in.feature Coverage Results" MODIFIED="1559630784865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_create_account_feature_I_go_to_Sing_In_page__1_.coverage" NAME="test_create_account.feature:I go to Sing In page (1) Coverage Results" MODIFIED="1559142107649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$complete_order_feature.coverage" NAME="test_complete_order.feature Coverage Results" MODIFIED="1562086832525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1561638269400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$test_search_product_feature.coverage" NAME="test_search_product.feature Coverage Results" MODIFIED="1562097397290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$test_search_product_feature.coverage" NAME="test_search_product.feature Coverage Results" MODIFIED="1562164161503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1562337530283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$purchase_order_feature.coverage" NAME="purchase_order.feature Coverage Results" MODIFIED="1561458104357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_cart_info_feature.coverage" NAME="test_cart_info.feature Coverage Results" MODIFIED="1562071371289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature_I_go_to_Sing_In_page.coverage" NAME="create_account.feature:I go to Sing In page Coverage Results" MODIFIED="1557564365768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -802,80 +880,6 @@
         <state relative-caret-position="-2244" />
       </provider>
     </entry>
-    <entry file="uml://Python/#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>Python</ID>
-          <OriginalElement>#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py</OriginalElement>
-          <nodes>
-            <node x="639.75" y="77.0">utils.base.Base</node>
-            <node x="728.8888888888889" y="154.0">page_object.home.Home</node>
-            <node x="671.25" y="0.0">object</node>
-            <node x="498.8888888888889" y="154.0">page_object.sing_in.SingIn</node>
-            <node x="495.00000000000006" y="231.0">page_object.checkout.Payment</node>
-            <node x="244.00000000000006" y="231.0">page_object.checkout.Shipping</node>
-            <node x="0.0" y="231.0">page_object.checkout.Address</node>
-            <node x="923.8888888888889" y="154.0">page_object.log_in.LogIn</node>
-            <node x="247.8888888888889" y="154.0">page_object.checkout.CheckOut</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="page_object.home.Home" target="utils.base.Base">
-              <point x="0.0" y="-13.5" />
-              <point x="816.3888888888889" y="134.0" />
-              <point x="722.875" y="134.0" />
-              <point x="16.625" y="13.5" />
-            </edge>
-            <edge source="page_object.checkout.Payment" target="page_object.checkout.CheckOut">
-              <point x="0.0" y="-13.5" />
-              <point x="607.0" y="206.0" />
-              <point x="440.3888888888889" y="206.0" />
-              <point x="77.0" y="13.5" />
-            </edge>
-            <edge source="page_object.checkout.Shipping" target="page_object.checkout.CheckOut">
-              <point x="0.0" y="-13.5" />
-              <point x="359.50000000000006" y="206.0" />
-              <point x="363.3888888888889" y="206.0" />
-              <point x="0.0" y="13.5" />
-            </edge>
-            <edge source="page_object.sing_in.SingIn" target="utils.base.Base">
-              <point x="0.0" y="-13.5" />
-              <point x="603.8888888888889" y="134.0" />
-              <point x="689.625" y="134.0" />
-              <point x="-16.625" y="13.5" />
-            </edge>
-            <edge source="page_object.checkout.Address" target="page_object.checkout.CheckOut">
-              <point x="0.0" y="-13.5" />
-              <point x="112.0" y="206.0" />
-              <point x="286.3888888888889" y="206.0" />
-              <point x="-77.0" y="13.5" />
-            </edge>
-            <edge source="page_object.log_in.LogIn" target="utils.base.Base">
-              <point x="0.0" y="-13.5" />
-              <point x="1021.8888888888889" y="124.0" />
-              <point x="756.125" y="124.0" />
-              <point x="49.875" y="13.5" />
-            </edge>
-            <edge source="page_object.checkout.CheckOut" target="utils.base.Base">
-              <point x="0.0" y="-13.5" />
-              <point x="363.3888888888889" y="124.0" />
-              <point x="656.375" y="124.0" />
-              <point x="-49.875" y="13.5" />
-            </edge>
-            <edge source="utils.base.Base" target="object">
-              <point x="0.0" y="-13.5" />
-              <point x="0.0" y="13.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="206.0" y="112.0" />
-          <SelectedNodes>
-            <node>page_object.sing_in.SingIn</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21658">
@@ -916,13 +920,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/data/accounts_information_test_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="34">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/driver.py">
@@ -966,16 +970,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/virtualenv/Lib/site-packages/behave/matchers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1007,19 +1001,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="78" column="17" lean-forward="true" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/shopping_steps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="391">
           <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -1029,68 +1013,164 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/page_object/checkout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="48" column="36" lean-forward="true" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="78" />
+        <state relative-caret-position="748">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="78" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="21" column="46" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+    <entry file="uml://Python/#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>Python</ID>
+          <OriginalElement>#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py</OriginalElement>
+          <nodes>
+            <node x="926.8055555555555" y="154.0">page_object.log_in.LogIn</node>
+            <node x="495.0" y="231.0">page_object.checkout.Payment</node>
+            <node x="731.8055555555555" y="154.0">page_object.home.Home</node>
+            <node x="250.80555555555554" y="154.0">page_object.checkout.CheckOut</node>
+            <node x="501.80555555555554" y="154.0">page_object.sing_in.SingIn</node>
+            <node x="251.0" y="231.0">page_object.checkout.Address</node>
+            <node x="643.25" y="77.0">utils.base.Base</node>
+            <node x="674.75" y="0.0">object</node>
+            <node x="0.0" y="231.0">page_object.checkout.Shipping</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="page_object.home.Home" target="utils.base.Base">
+              <point x="0.0" y="-13.5" />
+              <point x="819.3055555555555" y="134.0" />
+              <point x="726.375" y="134.0" />
+              <point x="16.625" y="13.5" />
+            </edge>
+            <edge source="page_object.checkout.Shipping" target="page_object.checkout.CheckOut">
+              <point x="0.0" y="-13.5" />
+              <point x="115.5" y="206.0" />
+              <point x="289.30555555555554" y="206.0" />
+              <point x="-77.0" y="13.5" />
+            </edge>
+            <edge source="page_object.checkout.Payment" target="page_object.checkout.CheckOut">
+              <point x="0.0" y="-13.5" />
+              <point x="607.0" y="206.0" />
+              <point x="443.30555555555554" y="206.0" />
+              <point x="77.0" y="13.5" />
+            </edge>
+            <edge source="page_object.sing_in.SingIn" target="utils.base.Base">
+              <point x="-1.1368683772161603E-13" y="-13.5" />
+              <point x="606.8055555555554" y="134.0" />
+              <point x="693.125" y="134.0" />
+              <point x="-16.625" y="13.5" />
+            </edge>
+            <edge source="page_object.checkout.Address" target="page_object.checkout.CheckOut">
+              <point x="0.0" y="-13.5" />
+              <point x="363.0" y="206.0" />
+              <point x="366.30555555555554" y="206.0" />
+              <point x="0.0" y="13.5" />
+            </edge>
+            <edge source="page_object.log_in.LogIn" target="utils.base.Base">
+              <point x="0.0" y="-13.5" />
+              <point x="1024.8055555555557" y="124.0" />
+              <point x="759.625" y="124.0" />
+              <point x="49.875" y="13.5" />
+            </edge>
+            <edge source="page_object.checkout.CheckOut" target="utils.base.Base">
+              <point x="0.0" y="-13.5" />
+              <point x="366.30555555555554" y="124.0" />
+              <point x="659.875" y="124.0" />
+              <point x="-49.875" y="13.5" />
+            </edge>
+            <edge source="utils.base.Base" target="object">
+              <point x="0.0" y="-13.5" />
+              <point x="0.0" y="13.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.8749999999999999" x="264.28571428571433" y="155.2857142857143" />
+          <SelectedNodes>
+            <node>utils.base.Base</node>
+          </SelectedNodes>
+          <Categories />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page_object/home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="250">
+          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_search_product.feature">
+    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/search_steps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="68" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="37" column="13" selection-end-line="83" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
