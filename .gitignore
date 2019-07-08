@@ -25,6 +25,8 @@ __pycache__/
 .Python
 build/
 reports/
+virtualenv/
+.idea/
 develop-eggs/
 dist/
 downloads/

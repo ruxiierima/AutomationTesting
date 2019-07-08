@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/steps/search_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/features/steps/search_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/test_search_product.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_sort_products.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/test_sort_products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_sort_products.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,176 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/steps/search_steps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="68" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="uml://Python/#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>Python</ID>
-              <OriginalElement>#C:/Users/ierima/PycharmProjects/AutomationTesting/page_object/checkout.py</OriginalElement>
-              <nodes>
-                <node x="926.8055555555555" y="154.0">page_object.log_in.LogIn</node>
-                <node x="495.0" y="231.0">page_object.checkout.Payment</node>
-                <node x="731.8055555555555" y="154.0">page_object.home.Home</node>
-                <node x="250.80555555555554" y="154.0">page_object.checkout.CheckOut</node>
-                <node x="501.80555555555554" y="154.0">page_object.sing_in.SingIn</node>
-                <node x="251.0" y="231.0">page_object.checkout.Address</node>
-                <node x="643.25" y="77.0">utils.base.Base</node>
-                <node x="674.75" y="0.0">object</node>
-                <node x="0.0" y="231.0">page_object.checkout.Shipping</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="page_object.home.Home" target="utils.base.Base">
-                  <point x="0.0" y="-13.5" />
-                  <point x="819.3055555555555" y="134.0" />
-                  <point x="726.375" y="134.0" />
-                  <point x="16.625" y="13.5" />
-                </edge>
-                <edge source="page_object.checkout.Shipping" target="page_object.checkout.CheckOut">
-                  <point x="0.0" y="-13.5" />
-                  <point x="115.5" y="206.0" />
-                  <point x="289.30555555555554" y="206.0" />
-                  <point x="-77.0" y="13.5" />
-                </edge>
-                <edge source="page_object.checkout.Payment" target="page_object.checkout.CheckOut">
-                  <point x="0.0" y="-13.5" />
-                  <point x="607.0" y="206.0" />
-                  <point x="443.30555555555554" y="206.0" />
-                  <point x="77.0" y="13.5" />
-                </edge>
-                <edge source="page_object.sing_in.SingIn" target="utils.base.Base">
-                  <point x="-1.1368683772161603E-13" y="-13.5" />
-                  <point x="606.8055555555554" y="134.0" />
-                  <point x="693.125" y="134.0" />
-                  <point x="-16.625" y="13.5" />
-                </edge>
-                <edge source="page_object.checkout.Address" target="page_object.checkout.CheckOut">
-                  <point x="0.0" y="-13.5" />
-                  <point x="363.0" y="206.0" />
-                  <point x="366.30555555555554" y="206.0" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-                <edge source="page_object.log_in.LogIn" target="utils.base.Base">
-                  <point x="0.0" y="-13.5" />
-                  <point x="1024.8055555555557" y="124.0" />
-                  <point x="759.625" y="124.0" />
-                  <point x="49.875" y="13.5" />
-                </edge>
-                <edge source="page_object.checkout.CheckOut" target="utils.base.Base">
-                  <point x="0.0" y="-13.5" />
-                  <point x="366.30555555555554" y="124.0" />
-                  <point x="659.875" y="124.0" />
-                  <point x="-49.875" y="13.5" />
-                </edge>
-                <edge source="utils.base.Base" target="object">
-                  <point x="0.0" y="-13.5" />
-                  <point x="0.0" y="13.5" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.8749999999999999" x="264.28571428571433" y="155.2857142857143" />
-              <SelectedNodes>
-                <node>utils.base.Base</node>
-              </SelectedNodes>
-              <Categories />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_object/home.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="52" column="30" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page_object/sing_in.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="37" column="13" selection-end-line="83" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="72">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -272,8 +105,8 @@
         <option value="$PROJECT_DIR$/utils/base.py" />
         <option value="$PROJECT_DIR$/features/test_search_product.feature" />
         <option value="$PROJECT_DIR$/page_object/home.py" />
-        <option value="$PROJECT_DIR$/features/test_sort_products.feature" />
         <option value="$PROJECT_DIR$/features/steps/search_steps.py" />
+        <option value="$PROJECT_DIR$/features/test_sort_products.feature" />
       </list>
     </option>
   </component>
@@ -551,14 +384,11 @@
       <workItem from="1561309657303" duration="6903000" />
       <workItem from="1561360570292" duration="89907000" />
       <workItem from="1561914512964" duration="30907000" />
-      <workItem from="1562165692026" duration="15445000" />
+      <workItem from="1562165692026" duration="18439000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 42m 23s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_search_product_feature - 2019.07.02 at 22h 43m 18s.xml">
       <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
@@ -586,9 +416,12 @@
     <history-entry file="all_tests - 2019.07.05 at 17h 44m 21s.xml">
       <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
+    <history-entry file="all_tests - 2019.07.08 at 17h 12m 21s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="442410000" />
+    <option name="totallyTimeSpent" value="445404000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,19 +433,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.27987897" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20130932" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.3938619" weight="0.27659574" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.89636916" weight="0.497545" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.62193125" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.1898527" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" visible="true" weight="0.36006546" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" weight="0.36006546" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.24222586" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1732224" side_tool="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -730,7 +563,7 @@
     <SUITE FILE_PATH="coverage/AutomationTesting$test_create_account_feature_I_go_to_Sing_In_page__1_.coverage" NAME="test_create_account.feature:I go to Sing In page (1) Coverage Results" MODIFIED="1559142107649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$complete_order_feature.coverage" NAME="test_complete_order.feature Coverage Results" MODIFIED="1562086832525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_search_product_feature.coverage" NAME="test_search_product.feature Coverage Results" MODIFIED="1562164161503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1562337530283" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1562594823301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$purchase_order_feature.coverage" NAME="purchase_order.feature Coverage Results" MODIFIED="1561458104357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_cart_info_feature.coverage" NAME="test_cart_info.feature Coverage Results" MODIFIED="1562071371289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature_I_go_to_Sing_In_page.coverage" NAME="create_account.feature:I go to Sing In page Coverage Results" MODIFIED="1557564365768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -884,26 +717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21658">
           <caret line="1285" column="18" selection-start-line="1285" selection-start-column="18" selection-end-line="1285" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/element.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7922">
-          <caret line="481" column="8" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/navigation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,23 +907,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/sing_in_steps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -1121,16 +917,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
+    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="-1156">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/features/steps/search_steps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-136">
           <caret line="10" selection-start-line="10" selection-end-line="14" selection-end-column="68" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
@@ -1138,9 +937,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_create_account.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
+        <state relative-caret-position="-474">
           <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
@@ -1148,10 +954,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
+    <entry file="file://$PROJECT_DIR$/page_object/home.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="61" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+        <state relative-caret-position="153">
+          <caret line="192" column="8" selection-start-line="192" selection-start-column="8" selection-end-line="192" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/navigation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/element.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1020">
+          <caret line="481" column="8" selection-start-line="481" selection-start-column="8" selection-end-line="481" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,13 +994,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page_object/log_in.py">
+    <entry file="file://$PROJECT_DIR$/features/test_cart_info.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>

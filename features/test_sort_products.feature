@@ -13,8 +13,8 @@ be displayed by chosen method and should be relevant
     Given I load the website
     When I search product 'dress'
     And I sort results by <sort_method>
-    Then Results should be displayed by <sort_method>
-    And All the results should be relevant for search 'dress'
+    Then All the results should be relevant for search 'dress'
+    And Results should be displayed by <sort_method>
 
     Examples:
       | sort_method |
