@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/test_sort_products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/test_sort_products.feature" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,11 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="156">
+              <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/driver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +105,6 @@
         <option value="$PROJECT_DIR$/features/steps/sing_in_steps.py" />
         <option value="$PROJECT_DIR$/features/test_create_account.feature" />
         <option value="$PROJECT_DIR$/features/test_complete_order.feature" />
-        <option value="$PROJECT_DIR$/utils/driver.py" />
         <option value="$PROJECT_DIR$/utils/values.py" />
         <option value="$PROJECT_DIR$/page_object/log_in.py" />
         <option value="$PROJECT_DIR$/page_object/sing_in.py" />
@@ -107,6 +117,7 @@
         <option value="$PROJECT_DIR$/page_object/home.py" />
         <option value="$PROJECT_DIR$/features/steps/search_steps.py" />
         <option value="$PROJECT_DIR$/features/test_sort_products.feature" />
+        <option value="$PROJECT_DIR$/utils/driver.py" />
       </list>
     </option>
   </component>
@@ -384,26 +395,11 @@
       <workItem from="1561309657303" duration="6903000" />
       <workItem from="1561360570292" duration="89907000" />
       <workItem from="1561914512964" duration="30907000" />
-      <workItem from="1562165692026" duration="18439000" />
+      <workItem from="1562165692026" duration="21024000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 43m 18s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 44m 14s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 46m 40s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 48m 45s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
-    <history-entry file="test_search_product_feature - 2019.07.02 at 22h 57m 20s.xml">
-      <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
-    </history-entry>
     <history-entry file="test_search_product_feature - 2019.07.03 at 17h 21m 57s.xml">
       <configuration name="test_search_product.feature" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
@@ -419,9 +415,24 @@
     <history-entry file="all_tests - 2019.07.08 at 17h 12m 21s.xml">
       <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
     </history-entry>
+    <history-entry file="all_tests - 2019.07.09 at 20h 55m 50s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.07.09 at 20h 59m 07s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.07.09 at 21h 02m 30s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.07.09 at 21h 03m 07s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
+    <history-entry file="all_tests - 2019.07.09 at 22h 25m 00s.xml">
+      <configuration name="all_tests" configurationId="PyBehaveRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="445404000" />
+    <option name="totallyTimeSpent" value="447989000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -433,14 +444,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.27987897" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20130932" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.3938619" weight="0.27659574" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.62193125" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.7152209" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -563,7 +574,7 @@
     <SUITE FILE_PATH="coverage/AutomationTesting$test_create_account_feature_I_go_to_Sing_In_page__1_.coverage" NAME="test_create_account.feature:I go to Sing In page (1) Coverage Results" MODIFIED="1559142107649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$complete_order_feature.coverage" NAME="test_complete_order.feature Coverage Results" MODIFIED="1562086832525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_search_product_feature.coverage" NAME="test_search_product.feature Coverage Results" MODIFIED="1562164161503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1562594823301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/AutomationTesting$all_tests.coverage" NAME="all_tests Coverage Results" MODIFIED="1562699957906" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$purchase_order_feature.coverage" NAME="purchase_order.feature Coverage Results" MODIFIED="1561458104357" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$test_cart_info_feature.coverage" NAME="test_cart_info.feature Coverage Results" MODIFIED="1562071371289" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/AutomationTesting$create_account_feature_I_go_to_Sing_In_page.coverage" NAME="create_account.feature:I go to Sing In page Coverage Results" MODIFIED="1557564365768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -739,16 +750,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="34">
           <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/driver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1003,8 +1004,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/features/test_sort_products.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="156">
+          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/driver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
