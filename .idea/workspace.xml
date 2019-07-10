@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1c757a06-8153-4ff3-aa1e-e92f8eb29676" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" beforeDir="false" afterPath="$PROJECT_DIR$/_LICENTA/LICENTA_IERIMA_RUXANDRA.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_LICENTA/LICNTA_IERIMA_RUXANDRA.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/_LICENTA/LICNTA_IERIMA_RUXANDRA.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +29,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/driver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
+            <state relative-caret-position="220">
               <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -395,7 +397,7 @@
       <workItem from="1561309657303" duration="6903000" />
       <workItem from="1561360570292" duration="89907000" />
       <workItem from="1561914512964" duration="30907000" />
-      <workItem from="1562165692026" duration="21024000" />
+      <workItem from="1562165692026" duration="23014000" />
     </task>
     <servers />
   </component>
@@ -432,7 +434,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="447989000" />
+    <option name="totallyTimeSpent" value="449979000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,19 +446,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6061381" visible="true" weight="0.27987897" />
       <window_info id="Favorites" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.20130932" />
       <window_info anchor="bottom" id="Structure" order="2" sideWeight="0.3938619" weight="0.27659574" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.89636916" visible="true" weight="0.7152209" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.89636916" weight="0.7152209" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.8956127" weight="0.40425533" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" sideWeight="0.49924356" weight="0.1898527" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" weight="0.36006546" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.82677764" visible="true" weight="0.36006546" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.24222586" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1732224" side_tool="true" weight="0.21276596" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -1011,7 +1013,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/driver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
+        <state relative-caret-position="220">
           <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
