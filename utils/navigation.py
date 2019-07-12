@@ -1,7 +1,4 @@
-import time
 import logging
-
-from utils.base import Base
 
 try:
     from selenium import webdriver
