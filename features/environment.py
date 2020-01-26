@@ -16,12 +16,3 @@ def after_all(context):
 def before_feature(context, feature):
     if 'setup' in feature.tags:
         context.browser.delete_all_cookies()
-        if home.already_sing_in:
-            home.click_sing_out_button()
-
-
-"""
-def after_feature(context,feature):
-    if 'setup' in feature.tags:
-        context.browser.close()
-"""

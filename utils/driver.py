@@ -12,6 +12,7 @@ except ImportError:
     logging.critical("Selenium module is not installed...Exiting program.")
     exit(1)
 
+
 ## Driver class -setup for the driver
 class Driver():
     instance = None
@@ -38,5 +39,6 @@ class Driver():
 
     def load_website(self):
         self.driver.get(values.BASEURL)
+
 
 web_driver = Driver.get_instance()

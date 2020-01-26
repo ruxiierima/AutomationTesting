@@ -12,18 +12,18 @@ Feature: Complete order
 """Delivery address should be displayed
 when user want to complete an order
 """
-  Scenario: Check delivery address
-    Given I add product 'Faded Short Sleeve T-shirts,Printed Summer Dress' to the cart
-    When I go to delivery address
-    Then I check delivery address for account: 'ruxi.ierima@gmail.com'
+#    Scenario: Check delivery address
+#    Given I add product 'Faded Short Sleeve T-shirts,Printed Summer Dress' to the cart
+#    When I go to delivery address
+#    Then I check delivery address for account: 'ruxi.ierima@gmail.com'
 
-"""User should be able to pay for an order via
-bank wire or via
-"""
+  """User should be able to pay for an order via
+  bank transfer or via check
+  """
   Scenario Outline: Payment methods
     Given I add product 'Faded Short Sleeve T-shirts,Blouse' to the cart
     When I proceed to checkout
-    And I choose to pay via <Paymethod>
+    And I choose to pay via  <Paymethod>
     Then The confirmation of the <Paymethod> payment should be displayed
     And I should be able to submit my order
 

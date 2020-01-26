@@ -16,6 +16,7 @@ except ImportError:
     logging.critical("Selenium module is not installed...Exiting program.")
     exit(1)
 
+
 ## Base class -helper functionality
 class Base():
     TIMEOUT = 10

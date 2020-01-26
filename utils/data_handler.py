@@ -1,7 +1,7 @@
 import random
 import string
-import os
 import pandas as pd
+
 
 class DataHandler():
 
@@ -21,19 +21,21 @@ class DataHandler():
                 location_in_csv = index
                 break
         else:
-            raise Exception("Can't find specified  %s. Not found in CSV %s" % (row_value,file_name))
+            raise Exception("Can't find specified  %s. Not found in CSV %s" % (row_value, file_name))
 
         return csv_read[header][location_in_csv]
 
-# Rendom emails
+    # Rendom emails
     domains = ["hotmail.com", "gmail.com", "aol.com", "mail.com", "mail.kz", "yahoo.com"]
     letters = string.ascii_lowercase[:26]
 
     def generate_random_emails(self):
-        return [self.get_one_random_name(self.letters) + '@' + self.get_one_random_domain(self.domains) for i in range(1)][0]
+        return \
+            [self.get_one_random_name(self.letters) + '@' + self.get_one_random_domain(self.domains) for i in range(1)][
+                0]
 
-    def get_one_random_domain(self,domains):
+    def get_one_random_domain(self, domains):
         return random.choice(domains)
 
-    def get_one_random_name(selff,letters):
+    def get_one_random_name(selff, letters):
         return ''.join(random.choice(letters) for i in range(7))

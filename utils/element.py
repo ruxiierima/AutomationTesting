@@ -1,5 +1,7 @@
 import logging
 
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from utils.driver import web_driver
 
 try:
@@ -13,8 +15,6 @@ except ImportError:
 
 ## Element- commun function for page elements
 class Element():
-    selectedElement = None
-    elements = None
     instance = None
 
     def __init__(self):

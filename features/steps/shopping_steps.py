@@ -13,7 +13,8 @@ def step_impl(context, quantity):
 @then("I check if the expected quantity: '{expected_quantity}' added to the cart is correct")
 def step_impl(context, expected_quantity):
     current_quantity = home.get_shopping_cart_items
-    assert_equal(current_quantity, expected_quantity, "The expected quantity added to the cart is correct")
+    assert_equal(current_quantity, expected_quantity,
+                 "The expected quantity added to the cart is correct")
 
 
 @when("I click on check out button")

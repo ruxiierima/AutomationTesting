@@ -166,6 +166,8 @@ class Home(Base):
             raise Exception("Product '%s' not fount" % desired_product_name)
 
     def go_to_homescreen(self):
+        WebDriverWait(self.driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, self._logo_button_css)))
         self.driver.find_element(By.CSS_SELECTOR, self._logo_button_css).click()
 
     def click_sing_in_button(self):

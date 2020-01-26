@@ -2,6 +2,7 @@
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
 
+_LICENTA/
 ### Node ###
 # Logs
 logs
@@ -26,6 +27,9 @@ __pycache__/
 build/
 reports/
 virtualenv/
+.venv/
+.virtualenv/
+venv/
 .idea/
 develop-eggs/
 dist/
@@ -116,6 +120,7 @@ celerybeat-schedule
 # Environments
 .env
 .venv
+.virtualenv
 env/
 venv/
 ENV/

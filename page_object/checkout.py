@@ -1,8 +1,11 @@
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from nose.tools import assert_equal
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.wait import WebDriverWait
+
 from utils.driver import web_driver
 from utils.base import Base
-from selenium.webdriver.support.color import Color
 
 
 class CheckOut(Base):
@@ -36,7 +39,7 @@ class CheckOut(Base):
         table_id = self.driver.find_element(By.ID, self._cart_summary_id)
         body_element = table_id.find_element(By.TAG_NAME, "tbody")
         rows = body_element.find_elements(By.TAG_NAME, "tr")
-
+        self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight-2000)")
         for row in rows:
             product_properties = row.find_elements(By.TAG_NAME, "td")
             for product_property in product_properties:
@@ -74,7 +77,10 @@ class CheckOut(Base):
         check_out_button.click()
 
     def click_on_check_out(self):
-        self.driver.find_element(By.XPATH, self._proceed_to_checkout_button_xpath).click()
+        button = self._proceed_to_checkout_button_xpath
+        self.move_to_element(By.XPATH, button)
+        element = self.driver.find_element(By.XPATH, button)
+        element.click()
 
 
 class Address(CheckOut):
@@ -87,7 +93,7 @@ class Address(CheckOut):
         return cls.instance
 
     # Class locators
-    _delivery_address_css = '.address.item.box'
+    _delivery_address_id = 'address_delivery'
 
     def get_delivery_address(self):
         address_information = {'name': None,
@@ -97,7 +103,7 @@ class Address(CheckOut):
                                'phone': None
                                }
 
-        delivery_address = self.driver.find_element(By.CSS_SELECTOR, self._delivery_address_css)
+        delivery_address = self.driver.find_element(By.ID, self._delivery_address_id)
         all_information = delivery_address.find_elements(By.TAG_NAME, 'li')
         for information in all_information:
 
